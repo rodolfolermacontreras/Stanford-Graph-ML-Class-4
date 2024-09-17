@@ -78,7 +78,7 @@ set DEVICE=cpu
 ```
 
 pip install \
-    -f https://download.pytorch.org/whl/torch_stable.html \
+    -f https://download.pytorch.org/whl/torch/ \
     -r .environment/requirements.txt
 
 ```
@@ -88,7 +88,7 @@ pip install \
 ```
 
 pip install ^
-    -f https://download.pytorch.org/whl/torch_stable.html ^
+    -f https://download.pytorch.org/whl/torch/ ^
     -r .environment\requirements.txt
 
 ```
@@ -104,8 +104,8 @@ pip install ^
 ```
       
 pip install \
-    -f https://data.pyg.org/whl/torch-2.2.1+${DEVICE}.html \
-    -f https://pytorch-geometric.com/whl/torch-2.2.1+${DEVICE}.html \
+    -f https://data.pyg.org/whl/torch-2.4.0+${DEVICE}.html \
+    -f https://pytorch-geometric.com/whl/torch-2.4.0+${DEVICE}.html \
     -r .environment/graph_ml_requirements.txt
 
 ```
@@ -117,8 +117,8 @@ pip install \
 ```
       
 pip install ^
-    -f https://data.pyg.org/whl/torch-2.2.1+%DEVICE%.html ^
-    -f https://pytorch-geometric.com/whl/torch-2.2.1+%DEVICE%.html ^
+    -f https://data.pyg.org/whl/torch-2.4.0+%DEVICE%.html ^
+    -f https://pytorch-geometric.com/whl/torch-2.4.0+%DEVICE%.html ^
     -r .environment\graph_ml_requirements.txt
 
 ```
